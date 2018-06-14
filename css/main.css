@@ -28,6 +28,11 @@
 }
 
 @font-face {
+    font-family: "Extra";
+    src: url("fonts/MullerExtraBold.otf") format("opentype");
+}
+
+@font-face {
     font-family: "Light";
     src: url("fonts/MullerLight.otf") format("opentype");
 }
@@ -278,7 +283,7 @@ img.salon{
 .button{
 	background: rgba(255,255,255,0.5);
 	text-transform: uppercase;
-	font-family: "Code";
+	font-family: "Bold";
 	letter-spacing: 1px;
 	/* display: inline-block; */
 	border: 3px dotted #fe043c;
@@ -387,7 +392,7 @@ h3{
 	padding: 20px 60px;
 	padding-bottom: 10px;
 	letter-spacing: 1px;
-	font-family: "CodeR";
+	font-family: "Bold";
 	font-size: calc((100vw - 480px)/(1280 - 480) * (34 - 28) + 28px);
 	line-height: calc((100vw - 480px)/(1280 - 480) * (36 - 28) + 28px);
 }
@@ -410,7 +415,7 @@ h1{
 h2{
 	padding: 1vmax 60px;
 	text-transform: uppercase;
-	font-family: "Code";
+	font-family: "Extra";
 	/* letter-spacing: 1px; */
 	font-size: 3vmax;
 	line-height: 3.5vmax;
@@ -436,7 +441,7 @@ ul{
 
 li{
 	padding: 10px 10px;
-	/* list-style: unset; */
+	list-style-image: url("pctrs/details/point.svg");
 }
 
 p{
