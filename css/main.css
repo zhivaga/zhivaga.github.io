@@ -569,6 +569,9 @@ div.flowl{
 }
 
 @media screen and (max-device-width : 460px){
+	#rupt{
+		max-width: 60%;
+	}
 	input{
 		font-size: 40px;
 		margin: 4vh;
