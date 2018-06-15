@@ -86,7 +86,7 @@ a:hover{
 	max-width: 100%;
 }
 
-div.three{
+.three{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -676,7 +676,7 @@ div.flowl{
 		max-width: 100%;
 		/* font-size: 40px; */
 	}
-	div.third{
+	.third{
 		width: 100%;
 	}
 
@@ -720,7 +720,7 @@ div.flowl{
 		max-width: 50%;
 	}
 	div.third{
-		max-width: 33%;
+		width: 33%;
 	}
 	h3{
 		max-width: 680px;
