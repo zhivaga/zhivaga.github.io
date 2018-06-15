@@ -156,10 +156,6 @@ e{
 	padding-top: 60px;
 }
 
-#money{
-	background: #fafafa;
-}
-
 #franchise{
 	background: #fafafa;
 	background-image: url("pctrs/imgs/ni.jpg");
@@ -227,7 +223,9 @@ e{
 	opacity: 0;
 }
 #money{
+	background: #fafafa;
 	background-image: url("pctrs/imgs/money.jpg");
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;
 }
