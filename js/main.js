@@ -18,9 +18,13 @@ for (i = 0; i < acc.length; i++) {
 
 $(window).scroll(function(){
             if ($(this).scrollTop() > 800) {
+                navigate.style.background="white";
+                navigate.style.opacity="1";
                 navigation.style.transform="translateY(0)";
             } else {
                 navigation.style.transform="translateY(-100px)";
+                navigate.style.background="#fafafa";
+                navigate.style.opacity="0.5";
             }
 });
 
