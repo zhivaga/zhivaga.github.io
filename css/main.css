@@ -106,6 +106,12 @@ h4{
 	line-height: 28px;
 	font-family: "Regular";
 }
+h5{
+	font-size: 24px;
+	line-height: 28px;
+	font-family: "Regular";
+}
+
 
 h3.dop_bottom{
 	padding-bottom: 30px;
@@ -176,6 +182,12 @@ e{
 }
 ::-webkit-scrollbar-thumb {
 		background-color: black;
+}
+
+#logo{
+	padding-left: 60px;
+	width: 260px;
+	height: auto;
 }
 
 #best{
@@ -270,14 +282,14 @@ img.salon{
 
 .press{
 	right: 0;
-	width: 45%;
+	max-width: 50%;
 	display: inline-block;
 	pointer-events: none;
 	opacity: 0.5;
 	font-size: 16px;
-	line-height: 24px;
-	padding-top: 50px;
-	padding-bottom: 30px;
+	line-height: 20px;
+	padding-top: 46px;
+	padding-left: 60px;
 }
 
 .button{
@@ -317,7 +329,7 @@ b{
 .name{
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-	min-height: 95vh;
+	min-height: 98vh;
 }
 
 .inject{
@@ -407,9 +419,10 @@ h1{
 }
 
 .close{
+	padding: 0;
 	position: absolute;
-	right: -54px;
-	top: 0px;
+	right: 0;
+	top: 0;
 }
 
 h2{
@@ -433,14 +446,14 @@ h2{
 }
 
 ul{
-	padding: 10px 50px;
+	padding: 10px 80px;
 	font-family: "Light";
 	font-size: calc( (100vw - 700px)/(1280 - 700) * (21 - 20) + 20px);
 	line-height: calc( (100vw - 700px)/(1280 - 700) * (24 - 22) + 22px);
 }
 
 li{
-	padding: 10px 10px;
+	padding: 10px 20px;
 	list-style-image: url("pctrs/details/point.svg");
 }
 
@@ -458,7 +471,8 @@ p.d{
 }
 
 p.q{
-	padding-top: 30px;
+	padding-top: 20px;
+	line-height: 1.4em;
 	font-family: "Bold";
 	text-decoration-line: underline;
 	text-decoration-style: dotted;
@@ -524,6 +538,7 @@ div.flowl{
 }
 
 #pop-up{
+	border-radius: 0 24px 0 0;
 	padding-top: 30px;
 	box-shadow: 1px 1px 30px #fe043c;
 	display: none;
@@ -536,6 +551,7 @@ div.flowl{
 }
 
 #pop-up2{
+	border-radius: 0 24px 0 0;
 	/* min-width: 50%;
 	min-height: 30%; */
 	padding: 60px 0;
@@ -568,7 +584,7 @@ div.flowl{
 	width: calc(100% - 120px);
 }
 
-@media screen and (max-device-width : 460px){
+@media only screen and (max-device-width : 460px){
 	#rupt{
 		max-width: 60%;
 	}
@@ -578,7 +594,14 @@ div.flowl{
 	}
 }
 
-@media screen and (max-device-width : 721px){
+@media only screen and (max-device-width : 721px){
+	#begin{
+		background-image: none;
+	}
+	#sra{
+		background-position: right bottom;
+		background-size: 60%;
+	}
 	#arrows{
 		background-image: none;
 	}
@@ -602,9 +625,14 @@ div.flowl{
 		line-height: 0;
 	}
 	#tel{
+		border-radius: 500px 500px 0 500px;
+		padding: 30px;
+		color: white;
+		background: #ff5ba0;
+		font-size: 30px;
 		position: absolute;
-		top: 10%;
-		right: 20%;
+		top: 5%;
+		right: 30%;
 	}
 	.hable{
 		display: none;
@@ -621,8 +649,8 @@ div.flowl{
 		padding: 40px 60px;
 	}
 	.press{
-		font-size: 24px;
-		line-height: 34px;
+		font-size: 18px;
+		line-height: 24px;
 	}
 	.column{
 		width: 100%;
@@ -674,7 +702,7 @@ div.flowl{
 	padding-bottom: 60px;
 }
 
-@media screen and (min-device-width : 722px){
+@media only screen and (min-device-width : 722px){
 	#tel{
 		display: none;
 	}
@@ -697,7 +725,7 @@ div.flowl{
 		max-width: 50%;
 	}
 	div.third{
-		max-width: 33.3%;
+		max-width: 33%;
 	}
 	h3{
 		max-width: 680px;
