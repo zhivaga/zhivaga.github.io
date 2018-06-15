@@ -92,9 +92,9 @@ div.three{
 	flex-wrap: wrap;
 }
 
-div.third{
+/* div.third{
 	max-width: 100%;
-}
+} */
 
 div.grey{
 	background: #fafafa;
@@ -677,7 +677,7 @@ div.flowl{
 		/* font-size: 40px; */
 	}
 	div.third{
-		max-width: 100%;
+		width: 100%;
 	}
 
 	p.answer{
