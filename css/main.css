@@ -67,10 +67,6 @@ a{
 	cursor: default;
 }
 
-#logo{
-	padding-left: 0px;
-}
-
 a:hover{
     color: #fe043c;
 		cursor: pointer;
@@ -180,9 +176,12 @@ e{
 		background-color: black;
 }
 
-#logo{
+#logo_2{
+	position: absolute;
+	z-index: 3;
+	padding-top: 20px;
 	padding-left: 60px;
-	width: 260px;
+	width: 16vmax;
 	height: auto;
 }
 
@@ -279,6 +278,18 @@ img.salon{
 }
 
 .press{
+	right: 0;
+	max-width: 50%;
+	display: inline-block;
+	pointer-events: none;
+	opacity: 0.5;
+	font-size: 16px;
+	line-height: 20px;
+	padding-top: 46px;
+	padding-left: 60px;
+}
+.pup{
+	position: absolute;
 	right: 0;
 	max-width: 50%;
 	display: inline-block;
@@ -529,10 +540,26 @@ div.flowl{
 	position: fixed;
 	height: 70px;
 	width: 100vw;
-	background: white;
+	/* background: white; */
+	opacity: 1;
+	z-index: 2;
+	transform: translateY(-80px);
+}
+
+#navigate{
+	font-size: 0.9vw;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	/* border-bottom: 1px solid rgba(0,0,0,0.1); */
+	position: fixed;
+	height: 70px;
+	width: 100vw;
+	opacity: 0.5;
+	background: #fafafa;
 	opacity: 1;
 	z-index: 1;
-	transform: translateY(-80px);
 }
 
 #pop-up{
@@ -593,6 +620,9 @@ div.flowl{
 }
 
 @media only screen and (max-device-width : 721px){
+	#navigate{
+		display: none;
+	}
 	#begin{
 		background-image: none;
 	}
@@ -625,6 +655,7 @@ div.flowl{
 	#tel{
 		border-radius: 500px 500px 0 500px;
 		padding: 30px;
+		padding-left: 60px;
 		color: white;
 		background: #ff5ba0;
 		font-size: 30px;
